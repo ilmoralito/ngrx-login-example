@@ -1,0 +1,7 @@
+<p>login works!</p>
+
+<pre>{{ vm$ | async | json }}</pre>
+
+<div *ngIf="error$ | async as error">{{ error }}</div>
+
+<button (click)="login()" [disabled]="loading$ | async">Login</button>
